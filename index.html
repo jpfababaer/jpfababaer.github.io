@@ -1,10 +1,86 @@
 <!DOCTYPE html>
 <html>
-  <head></head>
-  <body>
+  <head>
 
+    <style>
+      
+      /** * {
+        border: thin red solid;
+      } **/
+
+      .items {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 640px;
+        flex-grow: 1;
+      }
+
+      body {
+        background-color: #0f0e17;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        display: flex;
+        justify-content: center;
+      
+      }
+
+      .name {
+        color: #fffffe;
+        display: flex; 
+        justify-content: center;
+      }
+
+      .banner {
+        display: flex;
+        justify-content: center;
+      }
+
+      .social-icons {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .social-icons a {
+        color: #fffffe;
+        text-decoration: none;
+      }
+
+      .link {
+        background-color: #ff8906;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+      }
+
+      .link a {
+        color:#fffffe;
+        text-decoration: none;
+        text-align: center;
+        flex-grow: 1;
+      }
+
+      .banner-image {
+        width: 128px;
+        height: 128px;
+        object-fit: cover;
+        border-radius: 128px;
+      }
+
+      .thumbnail {
+        width: 48px;
+        height: 48px;
+        border-radius: 48px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+
+
+  <body>
+  <div class="items">
     <div class="banner">
-      <img src="images/Avatar.jpg" alt="John Paul Fababaer headshot">
+      <img src="/images/Avatar.jpg" alt="John Paul Fababaer headshot" class="banner-image">
     </div>
 
     <div class="name">
@@ -24,6 +100,26 @@
         Youtube
       </a>
     </div>
+
+    <div class="link">
+      <img src="/images/startup.jpg" alt="startup images" class="thumbnail">
+
+      <a target="_blank" href="http://paulgraham.com/startupideas.html">How to Get Startup Ideas - Paul Graham</a>
+    </div>
+
+    <div class="link">
+      <img src="/images/typography.jpg" alt="image of typography" class="thumbnail">
+
+      <a target="_blank" href="https://practicaltypography.com/typography-in-ten-minutes.html">Typography in ten minutes - Matthew Butterick</a>
+    </div>
+
+    <div class="link">
+      <img src="/images/coding.jpg" alt="lines of code" class="thumbnail">
+
+      <a target="_blank" href="https://www.freecodecamp.org/news/how-to-format-code-in-markdown/">How to Format Code in Markdown - freeCodeCamp.org</a>
+    </div>
+  </div>
+    
 
 
   </body>
